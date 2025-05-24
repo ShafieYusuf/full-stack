@@ -1,0 +1,26 @@
+{ 
+        "schemaVersion": "1.0", 
+        "requestId": "10111331033", 
+        "timestamp": "client_timestamp", 
+        "channelName": "WEB", 
+        "serviceName": "API_PURCHASE", 
+        "serviceParams": { 
+          "merchantUid": "***",                     // merchant uid// .env
+          "apiUserId": "***",                      // api user id// .env
+          "apiKey": "***",                         // api key// .env
+          "paymentMethod": "mwallet_account",      
+          "payerInfo": { 
+            "accountNo": "252618827482" 
+          }, 
+          "transactionInfo": { 
+            "referenceId": "12334",
+            "invoiceId": "7896504",
+            "amount": 1.00,  
+            "currency": "USD", 
+            "description": "Test USD" 
+          } 
+        } 
+}
+
+
+endpointurl= https://api.waafipay.net/asm

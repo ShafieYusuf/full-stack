@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Custom gradient text animation */
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text-animate {
+  background-size: 200% auto;
+  animation: gradient-text 3s ease infinite;
+}
+
+/* Custom hover effects */
+.hover-scale {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Custom shadow effects */
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(203, 4, 4, 0.3);
+}
+
+.shadow-glow:hover {
+  box-shadow: 0 0 25px rgba(203, 4, 4, 0.5);
+}
+
+/* How It Works hover animations */
+.step-card {
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(203, 4, 4, 0.1);
+}
+
+.step-card:hover .step-icon {
+  transform: scale(1.1) rotate(5deg);
+  background-color: #fef2f2;
+}
+
+.step-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.step-number {
+  transition: all 0.3s ease-in-out;
+}
+
+.step-card:hover .step-number {
+  transform: scale(1.2);
+  box-shadow: 0 5px 15px rgba(203, 4, 4, 0.2);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Testimonial styles */
+.testimonial-card {
+  transition: all 0.3s ease-in-out;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-stars {
+  color: #fbbf24;
+}
+
+.testimonial-dot {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-dot.active {
+  background-color: #CB0404;
+  width: 2rem;
+  border-radius: 0.5rem;
+}
+
+.testimonial-arrow {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.testimonial-arrow:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}

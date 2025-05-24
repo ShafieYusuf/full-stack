@@ -1,0 +1,90 @@
+🎯 Project Overview: Bus Booking Web App
+A platform for customers to browse and book bus trips, and for bus operators/admins to manage trips, buses, and bookings.
+
+👥 User Roles
+1. Customer
+Browse/search available buses and routes
+
+View seat availability
+k
+Book seats and make payments
+
+View booking history and status
+
+Receive booking confirmation via email or SMS (optional)
+
+Cancel bookings (within allowed time)
+
+2. Admin / Bus Operator
+Add/edit/delete bus details (routes, timings, prices, seat layouts)
+
+View/manage all bookings
+
+Manage seat availability
+
+View customer info for each booking
+
+Generate reports (daily/weekly/monthly bookings, earnings)
+
+📦 Core Features
+🚍 Bus & Route Management
+Add buses with route info, departure/arrival time, ticket price, total seats
+
+Seat layout configuration (e.g., 2x2, 2x3)
+
+Route filtering (from/to, date)
+
+🪑 Seat Selection System
+Visual seat layout per bus
+
+Real-time seat locking during booking (Socket.io optional)
+
+Show booked/unavailable seats
+
+📅 Booking System
+Book tickets for available buses
+
+View bus details before booking
+
+Online payment integration (Stripe, PayPal, or custom)
+
+📊 Dashboard (Admin)
+View upcoming trips and booking statistics
+
+Manage buses and schedules
+
+Cancel or reschedule trips
+
+View earnings reports
+
+🔐 Authentication & Authorization
+Sign up / Login (Customer & Admin)
+
+Role-based access control
+
+JWT or cookie-based sessions
+
+🔔 Notifications (Optional)
+Email confirmation after booking
+
+Reminder before departure (via email/SMS)
+
+🛠️ Tech Stack
+Frontend: React.js + Tailwind CSS
+
+Backend: Node.js + Express.js
+
+Database: MongoDB
+
+Authentication: JWT (or Passport.js)
+
+State Management: Context API or Redux (for complex flows)
+
+Optional:
+
+Socket.io: For live seat updates
+
+Nodemailer: For email notifications
+
+Cloudinary/S3: For bus images (if needed)
+
